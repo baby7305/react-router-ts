@@ -2,21 +2,9 @@ import * as React from 'react';
 import { Route, Link } from "react-router-dom";
 import './App.css';
 
-class Index extends React.Component {
-  render() {
-    return (
-      <h2>Home</h2>
-    );
-  }
-}
-
-const About = () => (
-  <h2>About</h2>
-);
-
-const Users = () => (
-  <h2>Users</h2>
-);
+import About from "./home/About";
+import Index from "./home/Home";
+import Users from "./home/User";
 
 class AppRouter extends React.Component {
   render() {
